@@ -1,4 +1,4 @@
-﻿***Choice of question and data***
+***AMC Stock Analysis***
 
 We are taking the position of an investment company that saw the shares of AMC Entertainment soar at the end of May 2021. We believe that the main cause of the sudden rise in AMC’s stock price is due to the traders on social media platforms encouraging people to buy the stock. As AMC is one of the most talked about stock on Reddit’s 10-million-member Reddit group, WallStreetBets, we would like to focus mainly on Reddit in this paper and to understand how the users of the platform hyped the price to unprecedented levels as they believe that short selling is part of a rigged game. The question we form for this analysis, is as following: *Did AMC’s stock go from being unloved on WallStreet to becoming a favorite with the help of Reddit traders?* 
 
@@ -45,18 +45,16 @@ Under feature engineering we are required to add more features to the data frame
 To avoid confusion, we create a separate data frame by copying the scaled\_df  of which the log values of the Volume column are calculated because the Volume of stock traded is given in millions per day which may alter the graphical representation. Moreover, it made our data more normally distributed for the values of Volume after converting to its log. 
 
 ***Lexicons***
+<p align = "center">
+<img width="684" alt="Screenshot 2022-10-02 at 22 07 11" src="https://user-images.githubusercontent.com/66077662/193476294-da945f10-2b18-41f5-a48d-37b0b3820051.png">
+</p>
+<h5 align="center">Variable Description</h5>
 
-***Table 1: variable description***
+<p align="center">
+<img width="693" alt="Screenshot 2022-10-02 at 22 08 09" src="https://user-images.githubusercontent.com/66077662/193476335-de317c9e-744c-4fcb-8ff2-5297db1b7d8a.png">
 
-![Et bilde som inneholder bord
-
-Automatisk generert beskrivelse](Aspose.Words.e217ac91-7e40-4145-81ab-9b6af097870f.001.png)
-
-***Table 2: means, standard deviation, median, min and max***
-
-![Et bilde som inneholder bord
-
-Automatisk generert beskrivelse](Aspose.Words.e217ac91-7e40-4145-81ab-9b6af097870f.002.png)
+</p>
+<h5 align="center">Mean, Standard Deviation, Median, Minimum and Maximum</h5>
 
 **Summary statistics**
 
@@ -70,9 +68,9 @@ HA = There is a relationship between the dependent- and independent variables.
 
 By looking at the results of our regression, we see that all variables besides *number of comments* are significant. With a p-value beyond 5%, we can remove it from the model and run the test again. The R2 value we receive is 0.762 which indicates that it can explain almost 76% of the variability in our data. We have calculated a significant model to predict the log value of Volume of trade for the stock of AMC. This allows us to say that we can in some terms determine that Reddit had a great positive influence on the trade- and in turn on the stock price of AMC Entertainment. As we know, when there is more demand than supply for a stock, the price is bound to shoot. 
 
-***Additional data***
+**Additional data**
 
-|***Additional info/data***|***Anlytics toold***|
+|***Additional info/data***|***Analytical tools***|
 | :- | :- |
 |- Further analyze the comment section under the subreddit “WallstreetBets” and look at the structure of the comment tree. |<p>***Reddit API***</p><p></p><p></p>|
 |<p>- A sentiment analysis can then be performed on these comments to understand what the feelings of these Reddit users were when discussing the AMC stock. </p><p></p>|<p>***Reddit API***</p><p>***+***</p><p>***Sentiment Analyzer (from nltk library in Python)***</p>|
