@@ -56,7 +56,7 @@ To avoid confusion, we create a separate data frame by copying the scaled\_df  o
 </p>
 <h5 align="center">Mean, Standard Deviation, Median, Minimum and Maximum</h5>
 
-**Summary statistics**
+***Summary statistics***
 
 In this section, we used the variables we computed from the above sections to run a regression model. Firstly, by converting the Volume to its log, we got a much more normally distributed data for this variable. Moving on, we plotted our variables into a correlation plot. A strong correlation amongst the variables scraped from Reddit was already presumed, however, we also saw some correlation in volume of trade and- number of comments, rolling average and searches for instance. This indicates that some of the variables do play a role in affected the stock price and the volume of trade. 
 
@@ -68,12 +68,12 @@ HA = There is a relationship between the dependent- and independent variables.
 
 By looking at the results of our regression, we see that all variables besides *number of comments* are significant. With a p-value beyond 5%, we can remove it from the model and run the test again. The R2 value we receive is 0.762 which indicates that it can explain almost 76% of the variability in our data. We have calculated a significant model to predict the log value of Volume of trade for the stock of AMC. This allows us to say that we can in some terms determine that Reddit had a great positive influence on the trade- and in turn on the stock price of AMC Entertainment. As we know, when there is more demand than supply for a stock, the price is bound to shoot. 
 
-**Additional data**
+***Additional data***
 
-|***Additional info/data***|***Analytical tools***|
+|**Additional info/data**|**Analytical tools**|
 | :- | :- |
-|- Further analyze the comment section under the subreddit “WallstreetBets” and look at the structure of the comment tree. |<p>***Reddit API***</p><p></p><p></p>|
-|<p>- A sentiment analysis can then be performed on these comments to understand what the feelings of these Reddit users were when discussing the AMC stock. </p><p></p>|<p>***Reddit API***</p><p>***+***</p><p>***Sentiment Analyzer (from nltk library in Python)***</p>|
+|- Further analyze the comment section under the subreddit “WallstreetBets” and look at the structure of the comment tree. |<p>**Reddit API**</p><p></p><p></p>|
+|<p>- A sentiment analysis can then be performed on these comments to understand what the feelings of these Reddit users were when discussing the AMC stock. </p><p></p>|<p>**Reddit API**</p><p>**+**</p><p>**Sentiment Analyzer (from nltk library in Python)**</p>|
 |- Financial statements can be used to compute financial ratios that indicate the health or value of AMC and its shares.||
-|<p>- Can also look at relationship between Reddit and Twitter </p><p>- Did Reddit start the trend, caught on by other social media platforms? </p>|- ***Use Twitter API (Many trending hashtags related to amc stock)***|
+|<p>- Can also look at relationship between Reddit and Twitter </p><p>- Did Reddit start the trend, caught on by other social media platforms? </p>|- **Use Twitter API (Many trending hashtags related to amc stock)**|
 
